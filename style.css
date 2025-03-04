@@ -1,0 +1,33 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1280px;
+    background-color: #e9e4e4;
+}
+
+input {
+    height:100px;
+    width: 100%;
+    border: none;
+    background-color: #dfd9d5;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+#button {
+    aspect-ratio: 1/1;
+    width:25%;
+    border:none;
+    outline: 1px solid black;
+    font-size: 1rem;
+}
