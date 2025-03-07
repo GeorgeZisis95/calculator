@@ -36,7 +36,7 @@ function calculate() {
         display.value = add(numOne, numTwo)
     } else if (opSymb === "-") {
         display.value = sub(numOne, numTwo)
-    } else if (opSymb === "*") {
+    } else if (opSymb === "x") {
         display.value = mul(numOne, numTwo)
     } else if (opSymb === "/") {
         display.value = div(numOne, numTwo)
