@@ -37,7 +37,7 @@ input {
     border-radius: 10px;
 }
 
-#button {
+button {
     aspect-ratio: 1/1;
     width: 25%;
     background-color: #2b2927;
@@ -48,6 +48,6 @@ input {
     cursor: pointer;
 }
 
-#button:hover {
+button:hover {
     background-color: #5f5955;
 }
