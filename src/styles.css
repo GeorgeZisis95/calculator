@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --pad: calc(12px + 1.5625vw);
 
-    --fs-base: calc(15px + 0.390625vw);
+    --fs-base: calc(17px + 0.390625vw);
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
     --fs-h3: 1.3rem;
+
+    --bck-color: #000000;
+    --txt-color: #39ff14;
+    --btn-color: #1a1a1a;
+    --btn-color-hover: #145214;
+    --txt-color-hover: #c3ffc3;
 }
 
 * {
@@ -14,7 +20,7 @@
     padding: 0;
     font: inherit;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Source Code Pro", monospace;
 }
 
 body {
@@ -23,25 +29,44 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
-}
-
-h1 {
-    background-color: #1a1a1a;
-    font-size: var(--fs-h1);
-    text-align: center;
-    color: #fff;
-    width: 100%;
+    background-color: var(--bck-color);
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    width: 30%;
+    width: calc(70px + 35vw);
     aspect-ratio: 1;
+
+    padding: var(--pad);
+
 }
 
 input {
-    grid-column: 1 / -1;
+    grid-column: 1/5;
+    background-color: inherit;
+    color: var(--txt-color);
+    border: none;
+    text-align: center;
+}
+
+button {
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #39FF14;
+    box-shadow: 0 0 5px #39FF14;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    width: calc(10px + 5vw);
+    padding: 0;
+    background-color: var(--btn-color);
+    color: var(--txt-color);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--btn-color-hover);
+    color: var(--txt-color-hover);
+    transform: scale(1.1) translateX(2%);
 }
